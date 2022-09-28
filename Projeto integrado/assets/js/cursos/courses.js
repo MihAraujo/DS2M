@@ -1,29 +1,29 @@
 "use strict"
 
-import { cursos } from "./cursos"
+import { cursos } from "./coursesFetch.js"
 
 let getCursos = await cursos()
 
 const criarContainer = (json) => {
     const container = document.getElementById('cursos')
 
-    const cursos = json
+    const {cursos} = json
 
-    cursos.array.forEach(element => {
+    cursos.forEach(element => {
         const div = document.createElement('div')
         div.classList.add('cursos-content')
 
         const img = document.createElement('img')
-        img.classList.add('cusos-icones')
+        img.classList.add('cursos-icones')
         img.src = element.icone
 
-        const span = documen.createElement('span')
+        const span = document.createElement('span')
         span.classList.add('cursos-nome')
-        img.textContent = element.sigla
+        span.textContent = element.sigla
 
         div.appendChild(img)
         div.appendChild(span)
-        div.id = element.sigla.tolowerCase()
+        div.id = element.sigla.toLowerCase()
 
         container.appendChild(div)
 
@@ -37,4 +37,4 @@ const criarContainer = (json) => {
     });
 }
 
-criarContainer( getCursos)
+criarContainer(getCursos)

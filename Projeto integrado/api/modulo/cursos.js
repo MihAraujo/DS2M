@@ -8,7 +8,7 @@ var cursos = [
     {
         "nome"  :   "002 - Técnico em Redes de Computadores",
         "sigla" :   "RDS",
-        "icone" :   "https://www.flaticon.com/br/icone-gratis/desenvolvedor-de-software_4882466?related_id=4882524&origin=search",
+        "icone" :   "https://cdn-icons-png.flaticon.com/512/4882/4882466.png",
         "carga" :   "1200"
     }
 ];
