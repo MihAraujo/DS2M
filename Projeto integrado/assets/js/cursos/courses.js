@@ -1,8 +1,8 @@
-"use strict"
+'use strict'
 
-import { cursos } from "./coursesFetch.js"
+import { getCursos } from "./coursesFetch.js"
 
-let getCursos = await cursos()
+let listaCursos = await getCursos()
 
 const criarContainer = (json) => {
     const container = document.getElementById('cursos')
@@ -37,4 +37,4 @@ const criarContainer = (json) => {
     });
 }
 
-criarContainer(getCursos)
+criarContainer(listaCursos)

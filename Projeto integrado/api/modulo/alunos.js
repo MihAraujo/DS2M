@@ -735,8 +735,12 @@ const getAlunosCurso = function (code){
         if (curso != ''){
             alunos.forEach(item => {
                 item.curso.forEach(item2 => {
-                    if(item2.nome.toLowerCase().includes(curso)){
-                        nomeAlunos.push(item.nome)
+                    if(item2.sigla.toLowerCase() == curso.toLowerCase()){
+                        nomeAlunos.push({
+                            nome: item.nome,
+                            foto: item.foto,
+                            status: item.status
+                        })
                         erro = false
                     }
                 });

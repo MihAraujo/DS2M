@@ -1,6 +1,6 @@
 'use strict'
 
-const cursos = async () => {
+const getCursos = async () => {
     const url = `http://localhost:8080/infoscursos/`
 
     const response = await fetch(url)
@@ -9,5 +9,5 @@ const cursos = async () => {
 }
 
 export{
-    cursos
+    getCursos
 }
