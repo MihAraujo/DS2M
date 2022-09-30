@@ -711,7 +711,10 @@ const getAlunosMatricula = function (code){
         if (matricula != ''){
             alunos.forEach(item => {
                 if(item.matricula.toLowerCase().includes(matricula)){
-                    nomeAlunos.push(item.nome);
+                    nomeAlunos.push({
+                        nome: item.nome,
+                        foto: item.foto
+                    });
                     erro = false;
                 }
                 alunosMatricula.alunos = nomeAlunos;
@@ -739,7 +742,8 @@ const getAlunosCurso = function (code){
                         nomeAlunos.push({
                             nome: item.nome,
                             foto: item.foto,
-                            status: item.status
+                            status: item.status,
+                            matricula: item.matricula
                         })
                         erro = false
                     }

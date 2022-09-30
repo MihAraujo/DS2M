@@ -50,6 +50,7 @@ const criarContainer = () => {
 
         div.appendChild(img)
         div.appendChild(span)
+        div.id = element.matricula
         container.appendChild(div)
 
         div.addEventListener('click', (el) => {

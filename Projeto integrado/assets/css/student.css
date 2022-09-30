@@ -31,9 +31,81 @@ header{
 main{
     display: flex;
     flex-grow: 1;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.aluno-content{
+    display: flex;
     flex-direction: column;
     align-items: center;
+    margin-left: 300px;
+    width: 500px;
+    height: 500px;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);
+    text-transform: uppercase;
 }
+
+.aluno-img{
+    margin-top: 35px;
+    width: 400px;
+    height: 400px;
+}
+
+.aluno-nome{
+    margin-top: 4px;
+    font-size: 18px;
+    align-items: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #3347B0;
+}
+
+.infos-aluno {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 300px;
+    width: 500px;
+    height: 500px;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);
+    text-transform: uppercase;
+}
+
+.score-progress::-webkit-progress-bar {
+    background-color: #ebebeb;
+    border-radius: 0.2rem;
+}
+
+.aprovado{
+    -webkit-appearance: none;
+}
+
+.aprovado::-webkit-progress-value {
+    background-color: #3347B0;
+    border-radius: 0.2rem;
+    box-shadow: 0 0 0.7rem #3347B0;
+}
+
+.exame{
+    -webkit-appearance: none;
+}
+
+.exame::-webkit-progress-value{
+    background-color: #E5B657;
+    border-radius: 0.2rem;
+    box-shadow: 0 0 0.7rem #E5B657;
+}
+
+.desaprovado{
+    -webkit-appearance: none;
+}
+
+.desaprovado::-webkit-progress-value{
+    background-color: #C11010;
+    border-radius: 0.2rem;
+    box-shadow: 0 0 0.7rem #C11010;
+}
+
 
 footer{
     height: 140px;
